@@ -2,310 +2,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TrashTitansNYC | NYC Junk Removal — Manhattan, Bronx, Queens, Brooklyn</title>
-  <meta name="description" content="Fast, affordable junk removal across Manhattan, Bronx, Queens, and Brooklyn. Real photos, real results. Call 1-347-321-4392." />
+  <title>TrashTitansNYC — Conquering Clutter, Elevating Spaces</title>
+  <meta name="description" content="NYC’s boldest junk removal. Fast, professional, eco-conscious. Serving Manhattan and all five boroughs. Call 1-347-321-4392." />
+  <link rel="preconnect" href="https://www.youtube.com">
   <style>
     :root{
-      --bg:#0f1115;--card:#141821;--ink:#e9eef5;--muted:#9aa4b2;--accent:#29c06f;--dark:#0c0f14;--line:#222836
+      --ink:#0e141b; --ink-2:#1b2733; --orange:#ff6a00; --blue:#0a3d91; --sky:#f2f6fb; --stone:#e6edf5; --white:#fff; --muted:#5a6b7b;
+      --radius:12px; --shadow:0 10px 30px rgba(0,0,0,.08);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1200px;margin:0 auto;padding:0 16px}
-    header.site-header{position:sticky;top:0;z-index:20;background:rgba(12,15,20,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-    .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand .logo{width:36px;height:36px;border-radius:6px;background:linear-gradient(135deg,#1b2333,#2a3650)}
-    .brand .name{font-weight:800;letter-spacing:.3px}
-    nav a{margin:0 8px;color:var(--muted)}
-    nav a.btn{color:#0b121b}
-    .btn{display:inline-block;background:var(--ink);color:#0b121b;border-radius:8px;padding:10px 14px;font-weight:700}
-    .btn-accent{background:var(--accent);color:#08120b}
-    .btn-ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
-    .hero{background:linear-gradient(180deg,rgba(41,192,111,.08),transparent 60%), url('images/bronx-truck-01.jpg') center/cover no-repeat; border-bottom:1px solid var(--line)}
-    .hero .container{padding:56px 16px 28px}
-    .hero h1{font-size:clamp(28px,6vw,44px);margin:6px 0}
-    .hero p{color:var(--muted);max-width:720px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-    section{border-top:1px solid var(--line)}
-    .section{padding:32px 0}
-    .section h2{margin:0 0 14px;font-size:clamp(22px,4.2vw,28px)}
-    .trust{display:flex;gap:14px;flex-wrap:wrap}
-    .trust .pill{background:var(--card);border:1px solid var(--line);padding:10px 12px;border-radius:999px;color:var(--muted)}
-    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
-    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-    figure{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}
-    figure img{width:100%;height:auto;border-radius:8px;display:block}
-    figcaption{font-size:.95rem;color:var(--muted);margin-top:6px}
-    .calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
-    .calc label{display:flex;flex-direction:column;gap:6px}
-    select, input[type="number"]{background:#0c1018;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px}
-    .estimate{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:8px}
-    blockquote{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin:0}
-    .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-    iframe.map{width:100%;height:320px;border:0;border-radius:10px}
-    footer.site-footer{border-top:1px solid var(--line);background:var(--dark);padding:20px 0;margin-top:20px}
-    .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+    a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+    .container{width:min(1100px,92%);margin:0 auto}
+    header.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--stone)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;gap:10px;align-items:center}
+    .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+    .brand h1{font-size:18px;margin:0;letter-spacing:.4px}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .btn{display:inline-block;background:var(--orange);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;letter-spacing:.3px;box-shadow:var(--shadow)}
+    .btn:hover{opacity:.92;text-decoration:none}
+    .btn-outline{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+    /* Hero */
+    .hero{background:linear-gradient(180deg, var(--sky), #fff 50%);}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:40px 0}
+    .hero h2{font-size:38px;line-height:1.1;margin:0 0 10px}
+    .hero p{font-size:18px;color:var(--muted);margin:0 0 20px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-card{border:1px solid var(--stone);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+    .hero-card img{width:100%;height:100%;object-fit:cover;display:block}
+    .hero-card .cap{padding:10px 14px;font-size:14px;color:var(--muted);display:flex;justify-content:space-between}
+    /* Sections */
+    section{padding:38px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-bottom:18px}
+    .section-head h3{font-size:26px;margin:0}
     .muted{color:var(--muted)}
-    .inline{display:flex;gap:8px;flex-wrap:wrap}
-    .stack-sm>*+*{margin-top:6px}
-    .stack-md>*+*{margin-top:10px}
-    .stack-lg>*+*{margin-top:14px}
-    @media (max-width:640px){nav .hide-sm{display:none}}
+    /* Services */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--stone);border-radius:var(--radius);overflow:hidden;background:#fff}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card .pad{padding:14px}
+    .pill{display:inline-block;background:var(--sky);color:var(--blue);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:8px}
+    /* Videos */
+    .video-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+    .video{position:relative;padding-top:56.25%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--stone);background:#000}
+    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    /* Carousel */
+    .carousel{position:relative;border:1px solid var(--stone);border-radius:var(--radius);overflow:hidden;background:#fff}
+    .track{display:flex;transition:transform .4s ease}
+    .slide{min-width:100%;display:grid;grid-template-columns:1fr 1fr}
+    .slide img{width:100%;height:320px;object-fit:cover;display:block}
+    .slide .label{position:absolute;background:rgba(0,0,0,.6);color:#fff;font-weight:700;padding:6px 10px;border-radius:999px;font-size:12px;margin:10px}
+    .ctrl{position:absolute;inset:0;pointer-events:none}
+    .ctrl button{pointer-events:auto;position:absolute;top:50%;transform:translateY(-50%);background:#fff;border:1px solid var(--stone);border-radius:999px;width:42px;height:42px;box-shadow:var(--shadow)}
+    .ctrl .prev{left:10px}
+    .ctrl .next{right:10px}
+    /* Reviews */
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .review{border:1px solid var(--stone);border-radius:var(--radius);padding:16px;background:#fff}
+    .stars{color:#f5a524;font-size:16px;letter-spacing:1px}
+    /* Borough SEO */
+    .boroughs{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    .list-links a{display:block;padding:8px 0;border-bottom:1px dashed var(--stone)}
+    /* Footer */
+    footer{background:var(--ink-2);color:#d8e1ea;padding:28px 0;margin-top:20px}
+    footer a{color:#d8e1ea}
+    .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+    /* Responsive */
+    @media (max-width:900px){
+      .hero-inner{grid-template-columns:1fr}
+      .video-grid{grid-template-columns:1fr}
+      .grid-3, .reviews, .foot-grid{grid-template-columns:1fr}
+      .slide{grid-template-columns:1fr}
+      .boroughs{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container nav-wrap">
+<header class="nav">
+  <div class="container nav-inner">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
-      <div class="name">TrashTitansNYC</div>
-      <div class="muted hide-sm">Real NYC junk removal</div>
+      <img src="images/logo-raccoon.png" alt="TrashTitansNYC logo" loading="eager">
+      <h1>TrashTitansNYC</h1>
     </div>
-    <nav>
+    <nav class="nav-links">
       <a href="#services">Services</a>
+      <a href="#videos">Videos</a>
       <a href="#gallery">Before & After</a>
-      <a href="#pricing">Pricing</a>
       <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-      <a class="btn btn-ghost" href="tel:+13473214392">Call 1-347-321-4392</a>
-      <a class="btn btn-accent" href="#pay">Pay Online</a>
+      <a href="#boroughs">NYC Areas</a>
+      <a class="btn" href="tel:13473214392">Call 1-347-321-4392</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <div class="stack-md">
-      <div class="inline">
-        <span class="pill" style="background:var(--accent);color:#08120b;border-radius:999px;padding:6px 10px;font-weight:800">Same‑day in Manhattan</span>
-        <span class="pill" style="background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--muted)">Licensed • Insured • Real photos</span>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h2>NYC’s boldest junk removal</h2>
+        <p>Conquering clutter, elevating spaces — fast, clean, and professional in Manhattan and all five boroughs.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#booking">Book now</a>
+          <a class="btn btn-outline" href="#videos">Watch commercial</a>
+        </div>
+        <p class="muted" style="margin-top:10px;">Same‑day service available. Licensed and insured. Real NYC crew.</p>
       </div>
-      <h1>NYC junk removal — fast, affordable, borough‑wide</h1>
-      <p>Serving Manhattan, Bronx, Queens, and Brooklyn. Real street‑level results. No stock photos. No excuses.</p>
-      <div class="cta-row">
-        <a class="btn btn-accent" href="tel:+13473214392">Call now</a>
-        <a class="btn" href="#pricing">Instant estimate</a>
-      </div>
-      <div class="trust">
-        <span class="pill">Upfront pricing</span>
-        <span class="pill">Respect for tight spaces</span>
-        <span class="pill">Quick curbside pickups</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="section">
-  <div class="container">
-    <h2>What we haul</h2>
-    <div class="grid-3">
-      <div class="card"><h3>Furniture</h3><p class="muted">Couches, beds, dressers, tables.</p></div>
-      <div class="card"><h3>Appliances</h3><p class="muted">Fridges, washers, AC units.</p></div>
-      <div class="card"><h3>Cleanouts</h3><p class="muted">Apartments, basements, offices, storage.</p></div>
-      <div class="card"><h3>Construction debris</h3><p class="muted">Bagged debris, wood, drywall (no hazardous waste).</p></div>
-      <div class="card"><h3>Yard waste</h3><p class="muted">Branches, bags, outdoor junk.</p></div>
-      <div class="card"><h3>Special items</h3><p class="muted">Pianos, safes, bulky items (quote required).</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="section">
-  <div class="container">
-    <h2>Before & after: real NYC jobs</h2>
-    <p class="muted">Manhattan‑dominant with Bronx, Queens, and Brooklyn coverage.</p>
-    <div class="gallery-grid">
-
-      <!-- Manhattan-heavy (1–20) -->
-      <figure><img src="images/bronx-truck-01.jpg" alt="Manhattan junk removal truck hauling sidewalk debris" loading="lazy"><figcaption>Manhattan curb cleared in under 30 minutes — Titans don’t stall.</figcaption></figure>
-      <figure><img src="images/bronx-truck-02.jpg" alt="Midtown office junk removal after hours" loading="lazy"><figcaption>Midtown office cleared after hours — no disruption.</figcaption></figure>
-      <figure><img src="images/bronx-truck-03.jpg" alt="Manhattan high-rise junk removal with elevator access" loading="lazy"><figcaption>High‑rise pickup — we handle the elevator hustle.</figcaption></figure>
-      <figure><img src="images/bronx-truck-04.jpg" alt="Upper East Side residential junk removal" loading="lazy"><figcaption>UES cleanup with care — tight hallways, zero scuffs.</figcaption></figure>
-      <figure><img src="images/bronx-truck-05.jpg" alt="Soho storefront junk removal before opening" loading="lazy"><figcaption>Soho storefront cleared before opening — discreet and fast.</figcaption></figure>
-      <figure><img src="images/bronx-truck-06.jpg" alt="Manhattan alleyway junk removal in tight space" loading="lazy"><figcaption>Alley cleanup — no space too tight for a Titan.</figcaption></figure>
-      <figure><img src="images/bronx-truck-07.jpg" alt="Chelsea curbside junk removal" loading="lazy"><figcaption>Chelsea curbside pickup with real speed.</figcaption></figure>
-      <figure><img src="images/bronx-truck-08.jpg" alt="Manhattan basement junk removal" loading="lazy"><figcaption>Basement emptied in one sweep — no drama.</figcaption></figure>
-      <figure><img src="images/bronx-truck-09.jpg" alt="Tribeca loft junk removal outside apartment" loading="lazy"><figcaption>Tribeca loft cleanup with precision.</figcaption></figure>
-      <figure><img src="images/bronx-truck-10.jpg" alt="Early morning Manhattan curbside junk removal" loading="lazy"><figcaption>Before‑sunrise curb clear — we don’t sleep.</figcaption></figure>
-      <figure><img src="images/bronx-truck-11.jpg" alt="Manhattan curb cleared in one pass" loading="lazy"><figcaption>One pass, full curb — done right.</figcaption></figure>
-      <figure><img src="images/bronx-truck-12.jpg" alt="Manhattan junk removal truck with NYC branding" loading="lazy"><figcaption>NYC pride — real crew, real jobs.</figcaption></figure>
-      <figure><img src="images/bronx-truck-13.jpg" alt="Manhattan residential junk removal truck at curb" loading="lazy"><figcaption>Zero‑hassle residential pickup.</figcaption></figure>
-      <figure><img src="images/bronx-truck-14.jpg" alt="Manhattan heavy debris junk removal" loading="lazy"><figcaption>Heavy debris — no subcontractors, just muscle.</figcaption></figure>
-      <figure><img src="images/bronx-truck-15.jpg" alt="Manhattan furniture and trash removal" loading="lazy"><figcaption>Furniture out, place spotless.</figcaption></figure>
-      <figure><img src="images/bronx-truck-16.jpg" alt="Manhattan fast pickup junk removal" loading="lazy"><figcaption>Fast pickup — NYC hustle, always.</figcaption></figure>
-      <figure><img src="images/bronx-truck-17.jpg" alt="Manhattan residential job finished curbside" loading="lazy"><figcaption>Residential curb — done and dusted.</figcaption></figure>
-      <figure><img src="images/bronx-truck-18.jpg" alt="Manhattan authentic NYC junk removal" loading="lazy"><figcaption>Real photos. Real results.</figcaption></figure>
-      <figure><img src="images/bronx-truck-19.jpg" alt="Manhattan storefront junk removal" loading="lazy"><figcaption>Commercial pickup — zero downtime.</figcaption></figure>
-      <figure><img src="images/bronx-truck-20.jpg" alt="Manhattan sidewalk clutter cleared by junk removal truck" loading="lazy"><figcaption>Sidewalk clutter gone — fast.</figcaption></figure>
-
-      <!-- Bronx (21–28) -->
-      <figure><img src="images/bronx-truck-21.jpg" alt="Bronx curbside junk removal" loading="lazy"><figcaption>Bronx curb cleanup — BX pride.</figcaption></figure>
-      <figure><img src="images/bronx-truck-22.jpg" alt="Bronx basement junk removal" loading="lazy"><figcaption>Bronx basement cleared — stairs, no problem.</figcaption></figure>
-      <figure><img src="images/bronx-truck-23.jpg" alt="Bronx alleyway junk removal" loading="lazy"><figcaption>Bronx alley — tight access solved.</figcaption></figure>
-      <figure><img src="images/bronx-truck-24.jpg" alt="Bronx garage junk removal" loading="lazy"><figcaption>Garage emptied in one sweep.</figcaption></figure>
-      <figure><img src="images/bronx-truck-25.jpg" alt="Bronx same-day curbside pickup" loading="lazy"><figcaption>Same‑day curb pickup — call and we roll.</figcaption></figure>
-      <figure><img src="images/bronx-truck-26.jpg" alt="Bronx backyard junk removal" loading="lazy"><figcaption>Backyard cleared — heavy lifting on us.</figcaption></figure>
-      <figure><img src="images/bronx-truck-27.jpg" alt="Bronx hoarder house junk removal" loading="lazy"><figcaption>Hoarder cleanout — no judgment, just work.</figcaption></figure>
-      <figure><img src="images/bronx-truck-28.jpg" alt="Authentic Bronx job site junk removal" loading="lazy"><figcaption>Real BX job site — no filters.</figcaption></figure>
-
-      <!-- Queens (29–34) -->
-      <figure><img src="images/bronx-truck-29.jpg" alt="Queens yard waste junk removal" loading="lazy"><figcaption>Queens yard cleanup — simple, fast.</figcaption></figure>
-      <figure><img src="images/bronx-truck-30.jpg" alt="Queens curbside residential junk removal" loading="lazy"><figcaption>Queens curb in one pass.</figcaption></figure>
-      <figure><img src="images/bronx-truck-31.jpg" alt="Queens basement junk removal" loading="lazy"><figcaption>Queens basement — careful and quick.</figcaption></figure>
-      <figure><img src="images/bronx-truck-32.jpg" alt="Queens storefront commercial junk removal" loading="lazy"><figcaption>Queens storefront after hours.</figcaption></figure>
-      <figure><img src="images/bronx-truck-33.jpg" alt="Queens curbside pickup" loading="lazy"><figcaption>Queens curb — we show up.</figcaption></figure>
-      <figure><img src="images/bronx-truck-34.jpg" alt="Queens alleyway junk removal" loading="lazy"><figcaption>Queens alley — tight space handled.</figcaption></figure>
-
-      <!-- Brooklyn (35–38) -->
-      <figure><img src="images/bronx-truck-35.jpg" alt="Brooklyn basement junk removal" loading="lazy"><figcaption>Brooklyn basement in one pass.</figcaption></figure>
-      <figure><img src="images/bronx-truck-36.jpg" alt="Brooklyn curbside junk removal" loading="lazy"><figcaption>BK curbside pickup — BK pride.</figcaption></figure>
-      <figure><img src="images/bronx-truck-37.jpg" alt="Brooklyn storefront junk removal" loading="lazy"><figcaption>BK storefront cleared — no fluff.</figcaption></figure>
-      <figure><img src="images/bronx-truck-38.jpg" alt="Brooklyn alleyway tight access junk removal" loading="lazy"><figcaption>BK alley — tight access solved.</figcaption></figure>
-
-      <!-- Manhattan (39–42) -->
-      <figure><img src="images/bronx-truck-39.jpg" alt="Manhattan sidewalk clutter cleared" loading="lazy"><figcaption>Manhattan curb — precision cleanup.</figcaption></figure>
-      <figure><img src="images/bronx-truck-40.jpg" alt="Manhattan loft junk removal outside apartment" loading="lazy"><figcaption>Loft cleanup — fast, respectful.</figcaption></figure>
-      <figure><img src="images/bronx-truck-41.jpg" alt="Manhattan high-rise junk removal mixed debris" loading="lazy"><figcaption>High‑rise pickup — elevator hustle.</figcaption></figure>
-      <figure><img src="images/bronx-truck-42.jpg" alt="Manhattan fast curbside junk removal" loading="lazy"><figcaption>Curb cleared under an hour.</figcaption></figure>
-
-    </div>
-  </div>
-</section>
-
-<section id="pricing" class="section">
-  <div class="container">
-    <h2>Instant estimate</h2>
-    <form id="calc" class="calc" onsubmit="return false;">
-      <label><span class="muted">Load size</span>
-        <select name="load" required>
-          <option value="0.25">Quarter truck</option>
-          <option value="0.5">Half truck</option>
-          <option value="0.75">Three‑quarters</option>
-          <option value="1">Full truck</option>
-        </select>
-      </label>
-      <label><span class="muted">Type</span>
-        <select name="type" required>
-          <option value="0">Mixed household</option>
-          <option value="50">Bulky items (sofas, dressers)</option>
-          <option value="80">Appliances (fridge, washer)</option>
-          <option value="120">Construction debris (bagged)</option>
-        </select>
-      </label>
-      <label><span class="muted">Borough</span>
-        <select name="borough" required>
-          <option>Manhattan</option>
-          <option>Bronx</option>
-          <option>Queens</option>
-          <option>Brooklyn</option>
-        </select>
-      </label>
-      <button id="calcBtn" class="btn btn-accent" type="button">Calculate</button>
-    </form>
-    <div id="estimate" class="estimate" aria-live="polite"></div>
-    <div class="cta-row">
-      <a class="btn" href="tel:+13473214392">Call to book</a>
-      <a class="btn btn-accent" href="#pay">Pay deposit</a>
-    </div>
-    <p class="muted">Estimate includes labor and dump fees. Final quote confirmed on site.</p>
-  </div>
-</section>
-
-<section id="reviews" class="section">
-  <div class="container">
-    <h2>Customer reviews</h2>
-    <div class="quotes">
-      <blockquote>“Fast, friendly, and cleared my entire basement in under an hour.” — Maria, Manhattan</blockquote>
-      <blockquote>“Showed up same day in Midtown. Fair price, zero stress.” — Jason, NYC</blockquote>
-      <blockquote>“Respectful crew. Careful in tight hallways. Will book again.” — Lena, UWS</blockquote>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="contact-grid">
-      <div class="card stack-sm">
-        <p><strong>Phone:</strong> <a href="tel:+13473214392">1-347-321-4392</a></p>
-        <p><strong>Email:</strong> <a href="mailto:booking@trashtitansnyc.com">booking@trashtitansnyc.com</a></p>
-        <p><strong>Hours:</strong> 7am–9pm daily</p>
-        <div class="cta-row">
-          <a class="btn btn-accent" href="tel:+13473214392">Call now</a>
-          <a class="btn" href="mailto:booking@trashtitansnyc.com?subject=Booking%20Request&body=Name:%0APhone:%0ABorough:%0AItems:%0APreferred%20time:">Email booking</a>
+      <div class="hero-card">
+        <img src="images/crew-hero.jpg" alt="TrashTitansNYC crew in front of truck" loading="eager">
+        <div class="cap">
+          <span>TrashTitansNYC</span>
+          <span>Est. Flushing → all boroughs</span>
         </div>
       </div>
-      <div class="card">
-        <iframe class="map" title="Service area map" src="https://www.google.com/maps/embed?pb=" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h3>Services we dominate</h3>
+        <a href="#booking" class="btn">Get a fast quote</a>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <img src="images/service-apartment.jpg" alt="Apartment cleanout in Manhattan" loading="lazy">
+          <div class="pad">
+            <div class="pill">Apartments & homes</div>
+            <h4 style="margin:6px 0 8px;">Full apartment cleanouts</h4>
+            <p class="muted">From walk-ups to high-rises — furniture, appliances, bag & tag, broom-clean finish.</p>
+            <p><a class="btn" href="#booking">Book now</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/service-construction.jpg" alt="Construction debris removal" loading="lazy">
+          <div class="pad">
+            <div class="pill">Contractors</div>
+            <h4 style="margin:6px 0 8px;">Renovation debris removal</h4>
+            <p class="muted">Drywall, lumber, tile — fast pickups that keep your jobsite moving.</p>
+            <p><a class="btn" href="#booking">Book now</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/service-office.jpg" alt="Office cleanout" loading="lazy">
+          <div class="pad">
+            <div class="pill">Commercial</div>
+            <h4 style="margin:6px 0 8px;">Office & retail cleanouts</h4>
+            <p class="muted">Desks, shelving, fixtures, e‑waste — after-hours options available.</p>
+            <p><a class="btn" href="#booking">Book now</a></p>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="pay" class="section">
-  <div class="container">
-    <h2>Pay online</h2>
-    <div class="grid-3">
-      <div class="card"><h3>Stripe</h3><p class="muted">Secure card checkout.</p><p><a class="btn btn-accent" href="https://checkout.stripe.com/pay/YOUR_LINK" target="_blank" rel="noopener">Pay with Stripe</a></p></div>
-      <div class="card"><h3>Square</h3><p class="muted">Simple payment link.</p><p><a class="btn" href="https://square.link/u/YOUR_LINK" target="_blank" rel="noopener">Pay with Square</a></p></div>
-      <div class="card"><h3>PayPal</h3><p class="muted">Use your balance.</p><p><a class="btn" href="https://paypal.me/YOURNAME" target="_blank" rel="noopener">Pay with PayPal</a></p></div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="cols">
-      <div>
-        <h3>TrashTitansNYC</h3>
-        <p class="muted">Serving Manhattan, Bronx, Queens, and Brooklyn.</p>
-        <p><a href="tel:+13473214392" class="btn btn-ghost">1-347-321-4392</a></p>
+  <!-- Videos -->
+  <section id="videos">
+    <div class="container">
+      <div class="section-head">
+        <h3>Watch the Titans in action</h3>
+        <p class="muted">Real NYC visuals. Real crew. Real results.</p>
       </div>
-      <div>
-        <h4>Quick links</h4>
-        <div class="stack-sm">
-          <a class="muted" href="#services">Services</a>
-          <a class="muted" href="#gallery">Before & After</a>
-          <a class="muted" href="#pricing">Pricing</a>
-          <a class="muted" href="#pay">Pay Online</a>
+      <div class="video-grid">
+        <div>
+          <div class="video">
+            <!-- Replace VIDEO_ID_MAIN with your commercial ID -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_MAIN?rel=0&modestbranding=1" title="TrashTitansNYC Commercial" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+          </div>
+          <p class="muted" style="margin-top:8px;">Main commercial — 40s</p>
+        </div>
+        <div>
+          <div class="video">
+            <!-- Replace VIDEO_ID_SOCIAL with your 15s social ad ID -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_SOCIAL?rel=0&modestbranding=1" title="TrashTitansNYC Social Ad" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+          </div>
+          <p class="muted" style="margin-top:8px;">Social ad — 15s</p>
+        </div>
+        <div>
+          <div class="video">
+            <!-- Replace VIDEO_ID_STORY with your brand story ID -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_STORY?rel=0&modestbranding=1" title="TrashTitansNYC Brand Story" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+          </div>
+          <p class="muted" style="margin-top:8px;">Brand story — 60–90s</p>
         </div>
       </div>
-      <div>
-        <h4>Coverage</h4>
-        <p class="muted">Manhattan • Bronx • Queens • Brooklyn</p>
+    </div>
+  </section>
+
+  <!-- Before & After Carousel -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h3>Before and after transformations</h3>
+        <p class="muted">Swipe or click to see the clean sweep.</p>
+      </div>
+
+      <div class="carousel" aria-label="Before and After gallery">
+        <div class="track" id="track">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div style="position:relative">
+              <span class="label">Before</span>
+              <img src="images/before-1.jpg" alt="Cluttered living room before cleanout" loading="lazy">
+            </div>
+            <div style="position:relative">
+              <span class="label">After</span>
+              <img src="images/after-1.jpg" alt="Living room spotless after cleanout" loading="lazy">
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div style="position:relative">
+              <span class="label">Before</span>
+              <img src="images/before-2.jpg" alt="Construction debris before removal" loading="lazy">
+            </div>
+            <div style="position:relative">
+              <span class="label">After</span>
+              <img src="images/after-2.jpg" alt="Jobsite cleared after debris removal" loading="lazy">
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div style="position:relative">
+              <span class="label">Before</span>
+              <img src="images/before-3.jpg" alt="Office space full of junk" loading="lazy">
+            </div>
+            <div style="position:relative">
+              <span class="label">After</span>
+              <img src="images/after-3.jpg" alt="Office space clean and ready" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="ctrl">
+          <button class="prev" aria-label="Previous" id="prev">‹</button>
+          <button class="next" aria-label="Next" id="next">›</button>
+        </div>
+      </div>
+
+      <p style="margin-top:10px"><a href="#booking" class="btn">Get your space before/after ready</a></p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <h3>What NYC clients say</h3>
+        <p class="muted">Professional, efficient, and respectful — that’s the standard.</p>
+      </div>
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Same‑day pickup in Midtown, crew was in and out. Broom‑clean finish. Will book again.”</p>
+          <p class="muted">— Property Manager, Manhattan</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“They handled a tough walk‑up without a scratch on the walls. Pro team.”</p>
+          <p class="muted">— Homeowner, Astoria</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“After-hours office cleanout — zero downtime for our team. Seamless.”</p>
+          <p class="muted">— Ops Lead, Flatiron</p>
+        </div>
       </div>
     </div>
-    <p class="muted" style="margin-top:10px">© 2025 TrashTitansNYC.</p>
+  </section>
+
+  <!-- Borough SEO -->
+  <section id="boroughs">
+    <div class="container boroughs">
+      <div>
+        <div class="section-head">
+          <h3>Manhattan junk removal</h3>
+        </div>
+        <p>From Financial District to Washington Heights, TrashTitansNYC moves fast: apartments, brownstones, offices, retail build‑outs, and renovation debris. Licensed, insured, and built for tight schedules and tighter spaces.</p>
+        <ul>
+          <li>• Same‑day pickups and narrow arrival windows</li>
+          <li>• Elevator, doorman, and COI‑friendly</li>
+          <li>• Eco‑conscious sorting: donate, recycle, dispose</li>
+        </ul>
+        <p><a class="btn" href="tel:13473214392">Call 1‑347‑321‑4392</a> <a class="btn btn-outline" href="#booking">Request a quote</a></p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Other NYC areas</h4>
+        <div class="list-links">
+          <a href="/brooklyn">Brooklyn junk removal</a>
+          <a href="/queens">Queens junk removal</a>
+          <a href="/bronx">Bronx junk removal</a>
+          <a href="/staten-island">Staten Island junk removal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section id="booking">
+    <div class="container">
+      <div class="section-head">
+        <h3>Ready when you are</h3>
+        <p class="muted">Text photos for a fast estimate or request a walkthrough video quote.</p>
+      </div>
+      <div class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden">
+        <div style="padding:18px">
+          <p><strong>Call:</strong> <a href="tel:13473214392">1‑347‑321‑4392</a></p>
+          <p><strong>Email:</strong> <a href="mailto:hello@trashtitansnyc.com">hello@trashtitansnyc.com</a></p>
+          <form onsubmit="event.preventDefault(); alert('Thanks! We will text or email you shortly.');">
+            <label for="name">Name</label><br/>
+            <input id="name" name="name" required style="width:100%;padding:10px;border:1px solid var(--stone);border-radius:8px;margin:6px 0 10px"><br/>
+            <label for="zip">ZIP</label><br/>
+            <input id="zip" name="zip" required pattern="[0-9]{5}" style="width:100%;padding:10px;border:1px solid var(--stone);border-radius:8px;margin:6px 0 10px"><br/>
+            <label for="msg">Items / notes</label><br/>
+            <textarea id="msg" name="msg" rows="4" style="width:100%;padding:10px;border:1px solid var(--stone);border-radius:8px;margin:6px 0 10px"></textarea><br/>
+            <button class="btn" type="submit">Request estimate</button>
+          </form>
+        </div>
+        <div style="background:url('images/truck-city.jpg') center/cover no-repeat; min-height:260px" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <h4 style="margin:0 0 8px;">TrashTitansNYC</h4>
+      <p>Conquering Clutter, Elevating Spaces.</p>
+      <p><strong>Phone:</strong> <a href="tel:13473214392">1‑347‑321‑4392</a></p>
+      <p><strong>Hours:</strong> Mon–Sat 7am–7pm, Sun 9am–3pm</p>
+    </div>
+    <div>
+      <h5>Quick links</h5>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#gallery">Before & After</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#boroughs">NYC Areas</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li><a href="/terms">Terms</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
 <script>
-  // Simple pricing calculator
-  (function(){
-    const btn = document.getElementById('calcBtn');
-    if(!btn) return;
-    btn.addEventListener('click', () => {
-      const form = document.getElementById('calc');
-      const load = parseFloat(form.load.value || 0);
-      const typeAdj = parseFloat(form.type.value || 0);
-      const borough = form.borough.value || 'Manhattan';
-      const baseFull = 600; // adjust as needed
-      const travel = borough === 'Manhattan' ? 50 : 25;
-      const subtotal = baseFull * load + typeAdj + travel;
-      const total = Math.round(subtotal);
-      const box = document.getElementById('estimate');
-      box.innerHTML = `<h3>Estimated total: $${total}</h3>
-        <p class="muted">Includes labor, dump fees, and ${borough} travel. Final quote confirmed on site.</p>`;
+  // Smooth anchor scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
     });
-  })();
+  });
 
-  // Optional: live chat vendor snippet can be pasted here.
+  // Simple carousel
+  const track = document.getElementById('track');
+  const slides = Array.from(track.children);
+  let index = 0;
+  function move(i){
+    index = (i + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index*100}%)`;
+  }
+  document.getElementById('prev').addEventListener('click', ()=>move(index-1));
+  document.getElementById('next').addEventListener('click', ()=>move(index+1));
+  // Swipe support
+  let startX=0;
+  track.addEventListener('touchstart', e=>startX=e.touches[0].clientX);
+  track.addEventListener('touchend', e=>{
+    const dx = e.changedTouches[0].clientX - startX;
+    if(Math.abs(dx)>40) move(index + (dx<0?1:-1));
+  });
+</script>
+
+<!-- LocalBusiness schema for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TrashTitansNYC",
+  "image": "https://trashtitansnyc.com/images/crew-hero.jpg",
+  "telephone": "+1-347-321-4392",
+  "areaServed": ["Manhattan","Brooklyn","Queens","Bronx","Staten Island"],
+  "url": "https://trashtitansnyc.com/",
+  "description": "NYC’s boldest junk removal. Conquering clutter, elevating spaces in all five boroughs.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "openingHours": "Mo-Sa 07:00-19:00 Su 09:00-15:00",
+  "sameAs": []
+}
 </script>
 
 </body>
