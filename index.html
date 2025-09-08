@@ -411,4 +411,64 @@
 </script>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TrashTitansNYC Payment Estimator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {font-family: Arial, sans-serif; background:#f5f7fa; color:#222; padding:20px;}
+  .calc-container {max-width:500px; margin:auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.08);}
+  h2 {text-align:center; margin-bottom:10px;}
+  .truck-image {width:100%; height:auto; display:block; margin:0 auto 15px; border:1px solid #ddd; border-radius:8px;}
+  .price {text-align:center; font-size:28px; font-weight:bold; margin:10px 0; color:#ff6a00;}
+  .slider-container {margin:20px 0;}
+  input[type=range] {width:100%;}
+  .labels {display:flex; justify-content:space-between; font-size:14px; color:#555;}
+</style>
+</head>
+<body>
+
+<div class="calc-container">
+  <h2>Estimate Your Price</h2>
+  <img id="truckImg" class="truck-image" src="images/truck-1.png" alt="Truck load level">
+  <div class="price" id="priceDisplay">$200</div>
+  
+  <div class="slider-container">
+    <input type="range" id="loadSlider" min="1" max="5" step="1" value="1">
+    <div class="labels">
+      <span>Empty</span>
+      <span>Full</span>
+    </div>
+  </div>
+  
+  <p style="text-align:center; font-size:14px; color:#555;">Includes labor, disposal, and a 16 ft truck.</p>
+  <p style="text-align:center;">
+    <a href="book.html" style="background:#ff6a00; color:#fff; padding:12px 20px; border-radius:999px; text-decoration:none; font-weight:bold;">Book Now</a>
+  </p>
+</div>
+
+<script>
+  const slider = document.getElementById('loadSlider');
+  const priceDisplay = document.getElementById('priceDisplay');
+  const truckImg = document.getElementById('truckImg');
+
+  const prices = [200, 400, 600, 800, 1000];
+  const truckImages = [
+    'images/truck-1.png', // empty
+    'images/truck-2.png', // 1/4 full
+    'images/truck-3.png', // half full
+    'images/truck-4.png', // 3/4 full
+    'images/truck-5.png'  // full
+  ];
+
+  slider.addEventListener('input', function() {
+    const index = parseInt(this.value) - 1;
+    priceDisplay.textContent = `$${prices[index].toLocaleString()}`;
+    truckImg.src = truckImages[index];
+  });
+</script>
+
+</body>
 </html>
