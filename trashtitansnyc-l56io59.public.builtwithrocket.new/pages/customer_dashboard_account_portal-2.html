@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from trashtitansnyc-l56io59.public.builtwithrocket.new/pages/customer_dashboard_account_portal.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Sep 2025 00:07:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account - TrashTitansNYC Customer Dashboard</title>
+    <meta name="description" content="Manage your TrashTitansNYC account, view service history, track loyalty rewards, and schedule new services. Your personalized cleanup command center." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+<script type="module" src="../../static.rocket.new/rocket-web5db3.js?_cfg=https%3A%2F%2Ftrashtitan6956back.builtwithrocket.new&amp;_be=https%3A%2F%2Fapplication.rocket.new&amp;_v=0.1.8"></script>
+</head>
+<body class="font-inter bg-surface">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-elevation-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 text-white fill-current">
+                            <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V19C3 20.1 3.9 21 5 21H11V19H5V3H13V9H21ZM14 10V12H16V10H14ZM16 13H14V15H16V13ZM20 15V13H18V15H20ZM20 16H18V18H20V16ZM16 16V18H14V16H16ZM13 18V16H11V18H13ZM12 19V21H14V19H12Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="font-montserrat font-bold text-xl text-primary">TrashTitansNYC</h1>
+                        <p class="text-xs text-text-secondary">NYC's Cleanup Heroes</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class='text-text-secondary hover:text-primary transition-colors duration-300' href='homepage-2.html'>Home</a>
+                    <a class='text-text-secondary hover:text-primary transition-colors duration-300' href='comprehensive_services_hub.html'>Services</a>
+                    <a class='text-text-secondary hover:text-primary transition-colors duration-300' href='interactive_pricing_calculator.html'>Pricing</a>
+                    <a class='text-text-secondary hover:text-primary transition-colors duration-300' href='streamlined_booking_portal.html'>Book Now</a>
+                    <a class='text-text-secondary hover:text-primary transition-colors duration-300' href='contact_command_center.html'>Contact</a>
+                    <a class='text-primary font-medium hover:text-secondary transition-colors duration-300' href='customer_dashboard_account_portal.html'>Account</a>
+                </div>
+
+                <!-- User Profile & CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mike Chen" class="w-8 h-8 rounded-full object-cover" onerror="this.src='../../images.pexels.com/photos/220453/pexels-photo-2204539245.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2'; this.onerror=null;" />
+                        <span class="text-primary font-medium">Mike C.</span>
+                    </div>
+                    <a class='btn-primary' href='streamlined_booking_portal.html'>Book Service</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-4 space-y-4">
+                <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mike Chen" class="w-10 h-10 rounded-full object-cover" onerror="this.src='../../images.pexels.com/photos/220453/pexels-photo-2204539245.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2'; this.onerror=null;" />
+                    <div>
+                        <p class="font-medium text-primary">Mike Chen</p>
+                        <p class="text-sm text-text-secondary">Titan Member</p>
+                    </div>
+                </div>
+                <a class='block text-text-secondary' href='homepage-2.html'>Home</a>
+                <a class='block text-text-secondary' href='comprehensive_services_hub.html'>Services</a>
+                <a class='block text-text-secondary' href='interactive_pricing_calculator.html'>Pricing</a>
+                <a class='block text-text-secondary' href='streamlined_booking_portal.html'>Book Now</a>
+                <a class='block text-text-secondary' href='contact_command_center.html'>Contact</a>
+                <a class='block text-primary font-medium' href='customer_dashboard_account_portal.html'>Account</a>
+                <div class="pt-4 border-t border-gray-200">
+                    <a class='btn-primary block text-center' href='streamlined_booking_portal.html'>Book Service</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between">
+                <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mike Chen" class="w-16 h-16 rounded-full object-cover border-4 border-secondary" onerror="this.src='../../images.pexels.com/photos/220453/pexels-photo-2204539245.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2'; this.onerror=null;" />
+                    <div>
+                        <h1 class="text-display font-montserrat font-bold">Welcome back, Mike!</h1>
+                        <div class="flex items-center space-x-4 mt-2">
+                            <span class="bg-secondary px-3 py-1 rounded-full text-sm font-semibold">Titan Member</span>
+                            <span class="text-white/80">Member since March 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a class='btn-secondary text-white border-white hover:bg-white hover:text-primary' href='streamlined_booking_portal.html'>
+                        📅 Book New Service
+                    </a>
+                    <button onclick="showQuickRebook()" class="btn-primary">
+                        🔄 Quick Rebook
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Sidebar Navigation -->
+            <div class="lg:col-span-1">
+                <div class="card sticky top-24">
+                    <nav class="space-y-2">
+                        <button onclick="showSection('overview')" class="dashboard-nav-item active w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">📊</span>
+                            <span>Overview</span>
+                        </button>
+                        <button onclick="showSection('history')" class="dashboard-nav-item w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">📋</span>
+                            <span>Service History</span>
+                        </button>
+                        <button onclick="showSection('upcoming')" class="dashboard-nav-item w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">⏰</span>
+                            <span>Upcoming Services</span>
+                        </button>
+                        <button onclick="showSection('addresses')" class="dashboard-nav-item w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">📍</span>
+                            <span>My Addresses</span>
+                        </button>
+                        <button onclick="showSection('loyalty')" class="dashboard-nav-item w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">🏆</span>
+                            <span>Rewards & Loyalty</span>
+                        </button>
+                        <button onclick="showSection('documents')" class="dashboard-nav-item w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">📄</span>
+                            <span>Documents</span>
+                        </button>
+                        <button onclick="showSection('settings')" class="dashboard-nav-item w-full text-left flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-300">
+                            <span class="text-xl">⚙️</span>
+                            <span>Account Settings</span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="lg:col-span-3">
+                <!-- Overview Section -->
+                <div id="overview-section" class="dashboard-section">
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="card text-center">
+                            <div class="text-3xl font-montserrat font-bold text-primary mb-2">12</div>
+                            <p class="text-text-secondary">Total Services</p>
+                        </div>
+                        <div class="card text-center">
+                            <div class="text-3xl font-montserrat font-bold text-secondary mb-2">2,847</div>
+                            <p class="text-text-secondary">Loyalty Points</p>
+                        </div>
+                        <div class="card text-center">
+                            <div class="text-3xl font-montserrat font-bold text-accent mb-2">4.2</div>
+                            <p class="text-text-secondary">Tons Diverted</p>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="card mb-8">
+                        <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Recent Activity</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4 p-4 bg-surface rounded-lg">
+                                <div class="w-12 h-12 bg-success/10 rounded-full flex items-center justify-center">
+                                    <span class="text-success text-xl">✓</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-semibold text-primary">Apartment Cleanout Completed</h3>
+                                    <p class="text-sm text-text-secondary">123 E 86th St, Manhattan • December 15, 2024</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-semibold text-primary">$299</p>
+                                    <p class="text-sm text-text-secondary">+150 points</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4 p-4 bg-surface rounded-lg">
+                                <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                    <span class="text-secondary text-xl">🎁</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-semibold text-primary">Reward Unlocked: Free Appliance Pickup</h3>
+                                    <p class="text-sm text-text-secondary">Earned for reaching 2,500 points</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-sm text-accent font-semibold">New!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Environmental Impact -->
+                    <div class="card">
+                        <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Your Environmental Impact</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-3xl">♻️</span>
+                                </div>
+                                <h3 class="font-semibold text-primary mb-2">Items Recycled</h3>
+                                <p class="text-2xl font-montserrat font-bold text-success">847</p>
+                                <p class="text-sm text-text-secondary">85% of total items</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-3xl">❤️</span>
+                                </div>
+                                <h3 class="font-semibold text-primary mb-2">Items Donated</h3>
+                                <p class="text-2xl font-montserrat font-bold text-secondary">234</p>
+                                <p class="text-sm text-text-secondary">Helping NYC families</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service History Section -->
+                <div id="history-section" class="dashboard-section hidden">
+                    <div class="card">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary">Service History</h2>
+                            <div class="flex items-center space-x-3">
+                                <select class="form-input text-sm w-auto">
+                                    <option>All Services</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Appliance</option>
+                                </select>
+                                <button class="btn-secondary text-sm px-4 py-2">Export</button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <!-- Service Record 1 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="font-semibold text-primary text-lg">Apartment Cleanout</h3>
+                                        <p class="text-text-secondary">December 15, 2024 • 10:00 AM - 12:30 PM</p>
+                                        <p class="text-text-secondary">123 E 86th St, Apt 4B, Manhattan, NY 10028</p>
+                                    </div>
+                                    <div class="text-right mt-4 lg:mt-0">
+                                        <p class="text-2xl font-montserrat font-bold text-primary">$299</p>
+                                        <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Crew Members</h4>
+                                        <div class="flex items-center space-x-3">
+                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Crew Member" class="w-8 h-8 rounded-full object-cover" onerror="this.src='../../images.pexels.com/photos/91227/pexels-photo-912279245.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2'; this.onerror=null;" />
+                                            <span class="text-sm">Carlos R. (Lead)</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3 mt-2">
+                                            <img src="../../images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Crew Member" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                            <span class="text-sm">Miguel S.</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Items Removed</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Old furniture (sofa, chairs, table)</li>
+                                            <li>• Electronics (TV, stereo system)</li>
+                                            <li>• Boxes of miscellaneous items</li>
+                                            <li>• Appliances (microwave, toaster)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-3">
+                                    <button onclick="showBeforeAfter()" class="btn-secondary text-sm px-4 py-2">View Photos</button>
+                                    <button onclick="downloadReceipt()" class="btn-secondary text-sm px-4 py-2">Download Receipt</button>
+                                    <button onclick="rebookService('apartment-cleanout')" class="btn-primary text-sm px-4 py-2">Rebook Similar</button>
+                                </div>
+                            </div>
+
+                            <!-- Service Record 2 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="font-semibold text-primary text-lg">Appliance Pickup</h3>
+                                        <p class="text-text-secondary">November 28, 2024 • 2:00 PM - 2:45 PM</p>
+                                        <p class="text-text-secondary">123 E 86th St, Apt 4B, Manhattan, NY 10028</p>
+                                    </div>
+                                    <div class="text-right mt-4 lg:mt-0">
+                                        <p class="text-2xl font-montserrat font-bold text-primary">$89</p>
+                                        <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Crew Members</h4>
+                                        <div class="flex items-center space-x-3">
+                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Crew Member" class="w-8 h-8 rounded-full object-cover" onerror="this.src='../../images.pexels.com/photos/220453/pexels-photo-2204539245.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2'; this.onerror=null;" />
+                                            <span class="text-sm">David K. (Lead)</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-2">Items Removed</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Refrigerator (old Whirlpool)</li>
+                                            <li>• Properly recycled at certified facility</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-3">
+                                    <button onclick="downloadReceipt()" class="btn-secondary text-sm px-4 py-2">Download Receipt</button>
+                                    <button onclick="rebookService('appliance-pickup')" class="btn-primary text-sm px-4 py-2">Rebook Similar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Services Section -->
+                <div id="upcoming-section" class="dashboard-section hidden">
+                    <div class="card">
+                        <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Upcoming Services</h2>
+                        
+                        <!-- Next Appointment -->
+                        <div class="bg-secondary/5 border-2 border-secondary/20 rounded-lg p-6 mb-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                                        <span class="text-white font-bold">📅</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-primary text-lg">Office Cleanout</h3>
+                                        <p class="text-text-secondary">Tomorrow • December 22, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="bg-secondary text-white px-4 py-2 rounded-lg font-semibold">
+                                        <div class="text-lg">23h 42m</div>
+                                        <div class="text-xs">until arrival</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                <div>
+                                    <h4 class="font-semibold text-primary mb-2">Service Details</h4>
+                                    <p class="text-sm text-text-secondary mb-1">📍 456 Park Ave, Suite 1200, Manhattan</p>
+                                    <p class="text-sm text-text-secondary mb-1">⏰ 9:00 AM - 11:00 AM</p>
+                                    <p class="text-sm text-text-secondary">💰 Estimated: $450</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary mb-2">Assigned Crew</h4>
+                                    <div class="flex items-center space-x-3 mb-2">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Carlos Rodriguez" class="w-8 h-8 rounded-full object-cover" onerror="this.src='../../images.pexels.com/photos/91227/pexels-photo-912279245.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2'; this.onerror=null;" />
+                                        <span class="text-sm">Carlos R. (Lead) • ⭐ 4.9</span>
+                                    </div>
+                                    <p class="text-xs text-text-secondary">Contact: (555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-3">
+                                <button onclick="rescheduleService()" class="btn-secondary text-sm px-4 py-2">Reschedule</button>
+                                <button onclick="modifyService()" class="btn-secondary text-sm px-4 py-2">Modify Service</button>
+                                <button onclick="cancelService()" class="text-error hover:underline text-sm px-4 py-2">Cancel</button>
+                            </div>
+                        </div>
+
+                        <!-- No Other Upcoming Services -->
+                        <div class="text-center py-8">
+                            <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl">📅</span>
+                            </div>
+                            <h3 class="font-semibold text-primary mb-2">No Other Upcoming Services</h3>
+                            <p class="text-text-secondary mb-4">Ready to schedule your next cleanup?</p>
+                            <a class='btn-primary' href='streamlined_booking_portal.html'>Book New Service</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Addresses Section -->
+                <div id="addresses-section" class="dashboard-section hidden">
+                    <div class="card">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary">My Addresses</h2>
+                            <button onclick="addNewAddress()" class="btn-primary">+ Add Address</button>
+                        </div>
+
+                        <div class="space-y-6">
+                            <!-- Primary Address -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-primary">🏠</span>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center space-x-2 mb-1">
+                                                <h3 class="font-semibold text-primary">Home</h3>
+                                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-semibold">Primary</span>
+                                            </div>
+                                            <p class="text-text-secondary">123 E 86th St, Apt 4B</p>
+                                            <p class="text-text-secondary">Manhattan, NY 10028</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button onclick="editAddress('home')" class="text-primary hover:underline text-sm">Edit</button>
+                                        <button onclick="deleteAddress('home')" class="text-error hover:underline text-sm">Delete</button>
+                                    </div>
+                                </div>
+
+                                <div class="bg-surface rounded-lg p-4">
+                                    <h4 class="font-semibold text-primary mb-2">Access Instructions</h4>
+                                    <p class="text-sm text-text-secondary mb-2">• Doorman building - ask for Mike Chen in 4B</p>
+                                    <p class="text-sm text-text-secondary mb-2">• Service elevator on right side of lobby</p>
+                                    <p class="text-sm text-text-secondary">• Apartment door is first on the left after elevator</p>
+                                </div>
+
+                                <div class="mt-4 flex items-center justify-between">
+                                    <p class="text-sm text-text-secondary">Last service: December 15, 2024</p>
+                                    <button onclick="rebookAtAddress('home')" class="btn-secondary text-sm px-4 py-2">Book Here</button>
+                                </div>
+                            </div>
+
+                            <!-- Office Address -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-secondary">🏢</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-primary">Office</h3>
+                                            <p class="text-text-secondary">456 Park Ave, Suite 1200</p>
+                                            <p class="text-text-secondary">Manhattan, NY 10016</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button onclick="editAddress('office')" class="text-primary hover:underline text-sm">Edit</button>
+                                        <button onclick="deleteAddress('office')" class="text-error hover:underline text-sm">Delete</button>
+                                    </div>
+                                </div>
+
+                                <div class="bg-surface rounded-lg p-4">
+                                    <h4 class="font-semibold text-primary mb-2">Access Instructions</h4>
+                                    <p class="text-sm text-text-secondary mb-2">• Business hours: 8 AM - 6 PM weekdays</p>
+                                    <p class="text-sm text-text-secondary mb-2">• Check in with security desk in main lobby</p>
+                                    <p class="text-sm text-text-secondary">• Service elevator requires key card (will provide)</p>
+                                </div>
+
+                                <div class="mt-4 flex items-center justify-between">
+                                    <p class="text-sm text-text-secondary">Next service: December 22, 2024</p>
+                                    <button onclick="rebookAtAddress('office')" class="btn-secondary text-sm px-4 py-2">Book Here</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loyalty & Rewards Section -->
+                <div id="loyalty-section" class="dashboard-section hidden">
+                    <div class="space-y-8">
+                        <!-- Points Overview -->
+                        <div class="card">
+                            <div class="text-center mb-6">
+                                <div class="w-24 h-24 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-4xl">🏆</span>
+                                </div>
+                                <h2 class="text-display font-montserrat font-bold text-primary mb-2">2,847 Points</h2>
+                                <p class="text-text-secondary">You're a Titan Member!</p>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-secondary to-secondary-600 rounded-lg p-6 text-white mb-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h3 class="font-semibold text-lg">Progress to Elite Status</h3>
+                                    <span class="text-sm opacity-90">653 points to go</span>
+                                </div>
+                                <div class="w-full bg-white/20 rounded-full h-3 mb-2">
+                                    <div class="bg-white rounded-full h-3" style="width: 81%"></div>
+                                </div>
+                                <p class="text-sm opacity-90">Elite members get 20% bonus points and priority scheduling</p>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="text-center p-4 bg-surface rounded-lg">
+                                    <div class="text-2xl font-montserrat font-bold text-primary">12</div>
+                                    <p class="text-sm text-text-secondary">Services Completed</p>
+                                </div>
+                                <div class="text-center p-4 bg-surface rounded-lg">
+                                    <div class="text-2xl font-montserrat font-bold text-secondary">3</div>
+                                    <p class="text-sm text-text-secondary">Referrals Made</p>
+                                </div>
+                                <div class="text-center p-4 bg-surface rounded-lg">
+                                    <div class="text-2xl font-montserrat font-bold text-accent">847</div>
+                                    <p class="text-sm text-text-secondary">Items Recycled</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Available Rewards -->
+                        <div class="card">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Available Rewards</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="border border-secondary/20 rounded-lg p-6 bg-secondary/5">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="font-semibold text-primary">Free Appliance Pickup</h3>
+                                        <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Available</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">One free appliance pickup service (up to $150 value)</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-text-secondary">Cost: 2,500 points</span>
+                                        <button onclick="redeemReward('appliance')" class="btn-primary text-sm px-4 py-2">Redeem</button>
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 rounded-lg p-6">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="font-semibold text-primary">20% Off Next Service</h3>
+                                        <span class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">153 points needed</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Get 20% off your next junk removal service</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-text-secondary">Cost: 3,000 points</span>
+                                        <button disabled class="btn-secondary text-sm px-4 py-2 opacity-50 cursor-not-allowed">Not Available</button>
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 rounded-lg p-6">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="font-semibold text-primary">Priority Scheduling</h3>
+                                        <span class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">1,153 points needed</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Get priority booking for 6 months</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-text-secondary">Cost: 4,000 points</span>
+                                        <button disabled class="btn-secondary text-sm px-4 py-2 opacity-50 cursor-not-allowed">Not Available</button>
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 rounded-lg p-6">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="font-semibold text-primary">Free Full Truck Service</h3>
+                                        <span class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">2,153 points needed</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">One free full truck junk removal (up to $500 value)</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-text-secondary">Cost: 5,000 points</span>
+                                        <button disabled class="btn-secondary text-sm px-4 py-2 opacity-50 cursor-not-allowed">Not Available</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement Badges -->
+                        <div class="card">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Achievement Badges</h2>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="text-center p-4 bg-success/10 rounded-lg">
+                                    <div class="text-3xl mb-2">🌟</div>
+                                    <h3 class="font-semibold text-success text-sm">First Timer</h3>
+                                    <p class="text-xs text-text-secondary">Completed first service</p>
+                                </div>
+                                <div class="text-center p-4 bg-secondary/10 rounded-lg">
+                                    <div class="text-3xl mb-2">♻️</div>
+                                    <h3 class="font-semibold text-secondary text-sm">Eco Warrior</h3>
+                                    <p class="text-xs text-text-secondary">500+ items recycled</p>
+                                </div>
+                                <div class="text-center p-4 bg-accent/10 rounded-lg">
+                                    <div class="text-3xl mb-2">🏆</div>
+                                    <h3 class="font-semibold text-accent text-sm">Loyal Customer</h3>
+                                    <p class="text-xs text-text-secondary">10+ services completed</p>
+                                </div>
+                                <div class="text-center p-4 bg-gray-100 rounded-lg opacity-50">
+                                    <div class="text-3xl mb-2">👑</div>
+                                    <h3 class="font-semibold text-gray-500 text-sm">Elite Member</h3>
+                                    <p class="text-xs text-text-secondary">Reach 3,500 points</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documents Section -->
+                <div id="documents-section" class="dashboard-section hidden">
+                    <div class="card">
+                        <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">My Documents</h2>
+                        
+                        <div class="space-y-6">
+                            <!-- Receipts -->
+                            <div>
+                                <h3 class="font-semibold text-primary mb-4">Service Receipts</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between p-4 bg-surface rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                                                <span class="text-primary">📄</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-primary">Receipt #TT-2024-1215</h4>
+                                                <p class="text-sm text-text-secondary">Apartment Cleanout • December 15, 2024 • $299.00</p>
+                                            </div>
+                                        </div>
+                                        <button onclick="downloadDocument('receipt-1215')" class="btn-secondary text-sm px-4 py-2">Download</button>
+                                    </div>
+                                    <div class="flex items-center justify-between p-4 bg-surface rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                                                <span class="text-primary">📄</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-primary">Receipt #TT-2024-1128</h4>
+                                                <p class="text-sm text-text-secondary">Appliance Pickup • November 28, 2024 • $89.00</p>
+                                            </div>
+                                        </div>
+                                        <button onclick="downloadDocument('receipt-1128')" class="btn-secondary text-sm px-4 py-2">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disposal Certificates -->
+                            <div>
+                                <h3 class="font-semibold text-primary mb-4">Disposal Certificates</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between p-4 bg-surface rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center">
+                                                <span class="text-success">🏅</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-primary">Disposal Certificate #DC-2024-1215</h4>
+                                                <p class="text-sm text-text-secondary">Proper disposal verification • December 15, 2024</p>
+                                            </div>
+                                        </div>
+                                        <button onclick="downloadDocument('disposal-1215')" class="btn-secondary text-sm px-4 py-2">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Donation Receipts -->
+                            <div>
+                                <h3 class="font-semibold text-primary mb-4">Donation Receipts (Tax Deductible)</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between p-4 bg-surface rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                                <span class="text-secondary">❤️</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-primary">Donation Receipt #DR-2024-1215</h4>
+                                                <p class="text-sm text-text-secondary">Goodwill NYC • Furniture & Clothing • Est. Value: $450</p>
+                                            </div>
+                                        </div>
+                                        <button onclick="downloadDocument('donation-1215')" class="btn-secondary text-sm px-4 py-2">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Settings Section -->
+                <div id="settings-section" class="dashboard-section hidden">
+                    <div class="space-y-8">
+                        <!-- Personal Information -->
+                        <div class="card">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Personal Information</h2>
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-semibold text-primary mb-2">First Name</label>
+                                        <input type="text" value="Mike" class="form-input" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-primary mb-2">Last Name</label>
+                                        <input type="text" value="Chen" class="form-input" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-primary mb-2">Email Address</label>
+                                    <input type="email" value="mike.chen@email.com" class="form-input" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-primary mb-2">Phone Number</label>
+                                    <input type="tel" value="(555) 123-4567" class="form-input" />
+                                </div>
+                                <button type="submit" class="btn-primary">Update Information</button>
+                            </form>
+                        </div>
+
+                        <!-- Communication Preferences -->
+                        <div class="card">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Communication Preferences</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="font-semibold text-primary">Service Reminders</h3>
+                                        <p class="text-sm text-text-secondary">Get notified about upcoming appointments</p>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" checked class="sr-only peer" />
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-secondary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="font-semibold text-primary">Promotional Emails</h3>
+                                        <p class="text-sm text-text-secondary">Receive special offers and discounts</p>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" checked class="sr-only peer" />
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-secondary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="font-semibold text-primary">Neighborhood Cleanup Alerts</h3>
+                                        <p class="text-sm text-text-secondary">Get notified about community cleanup events</p>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" class="sr-only peer" />
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-secondary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="font-semibold text-primary">SMS Notifications</h3>
+                                        <p class="text-sm text-text-secondary">Receive text updates about your services</p>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" checked class="sr-only peer" />
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-secondary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password & Security -->
+                        <div class="card">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Password & Security</h2>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-primary mb-2">Current Password</label>
+                                    <input type="password" class="form-input" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-primary mb-2">New Password</label>
+                                    <input type="password" class="form-input" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-primary mb-2">Confirm New Password</label>
+                                    <input type="password" class="form-input" />
+                                </div>
+                                <button type="submit" class="btn-primary">Update Password</button>
+                            </div>
+                        </div>
+
+                        <!-- Account Actions -->
+                        <div class="card">
+                            <h2 class="text-heading font-montserrat font-semibold text-primary mb-6">Account Actions</h2>
+                            <div class="space-y-4">
+                                <button onclick="exportData()" class="btn-secondary w-full md:w-auto">Export My Data</button>
+                                <button onclick="deactivateAccount()" class="text-error hover:underline w-full md:w-auto text-left">Deactivate Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Rebook Modal -->
+    <div id="quick-rebook-modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-6">
+            <h3 class="text-heading font-montserrat font-semibold text-primary mb-4">Quick Rebook</h3>
+            <p class="text-text-secondary mb-6">Select a previous service to book again with the same details:</p>
+            
+            <div class="space-y-3 mb-6">
+                <button onclick="selectQuickRebook('apartment-cleanout')" class="w-full text-left p-4 border border-gray-200 rounded-lg hover:border-secondary transition-colors duration-300">
+                    <h4 class="font-semibold text-primary">Apartment Cleanout</h4>
+                    <p class="text-sm text-text-secondary">123 E 86th St, Apt 4B • Last done: Dec 15, 2024</p>
+                </button>
+                <button onclick="selectQuickRebook('appliance-pickup')" class="w-full text-left p-4 border border-gray-200 rounded-lg hover:border-secondary transition-colors duration-300">
+                    <h4 class="font-semibold text-primary">Appliance Pickup</h4>
+                    <p class="text-sm text-text-secondary">123 E 86th St, Apt 4B • Last done: Nov 28, 2024</p>
+                </button>
+            </div>
+
+            <div class="flex space-x-3">
+                <button onclick="closeQuickRebook()" class="btn-secondary flex-1">Cancel</button>
+                <a class='btn-primary flex-1 text-center' href='streamlined_booking_portal.html'>Continue</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 text-white fill-current">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V19C3 20.1 3.9 21 5 21H11V19H5V3H13V9H21ZM14 10V12H16V10H14ZM16 13H14V15H16V13ZM20 15V13H18V15H20ZM20 16H18V18H20V16ZM16 16V18H14V16H16ZM13 18V16H11V18H13ZM12 19V21H14V19H12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-montserrat font-bold text-xl">TrashTitansNYC</h3>
+                            <p class="text-sm text-white/80">NYC's Cleanup Heroes</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Your neighborhood junk removal experts, serving all five boroughs with pride and professionalism.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class='text-white/80 hover:text-secondary transition-colors duration-300' href='homepage-2.html'>Home</a></li>
+                        <li><a class='text-white/80 hover:text-secondary transition-colors duration-300' href='comprehensive_services_hub.html'>Services</a></li>
+                        <li><a class='text-white/80 hover:text-secondary transition-colors duration-300' href='interactive_pricing_calculator.html'>Pricing</a></li>
+                        <li><a class='text-white/80 hover:text-secondary transition-colors duration-300' href='streamlined_booking_portal.html'>Book Now</a></li>
+                        <li><a class='text-white/80 hover:text-secondary transition-colors duration-300' href='contact_command_center.html'>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Areas -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Service Areas</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li>Manhattan</li>
+                        <li>Brooklyn</li>
+                        <li>Queens</li>
+                        <li>Bronx</li>
+                        <li>Staten Island</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Contact</h4>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <span>📞</span>
+                            <a href="tel:+1-555-TITANS" class="text-white/80 hover:text-secondary transition-colors duration-300">(555) TITANS</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span>✉️</span>
+                            <a href="mailto:hello@trashtitansnyc.com" class="text-white/80 hover:text-secondary transition-colors duration-300">hello@trashtitansnyc.com</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span>📍</span>
+                            <span class="text-white/80">Serving All NYC Boroughs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p class="text-white/80 text-sm">
+                    © 2025 TrashTitansNYC. All Rights Reserved. | Licensed & Insured NYC Junk Removal
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Dashboard navigation
+        function showSection(sectionName) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.dashboard-section');
+            sections.forEach(section => section.classList.add('hidden'));
+            
+            // Show selected section
+            document.getElementById(sectionName + '-section').classList.remove('hidden');
+            
+            // Update navigation active state
+            const navItems = document.querySelectorAll('.dashboard-nav-item');
+            navItems.forEach(item => item.classList.remove('active', 'bg-secondary/10', 'text-secondary'));
+            
+            // Find and activate the clicked nav item
+            const activeItem = Array.from(navItems).find(item => 
+                item.textContent.toLowerCase().includes(sectionName) || 
+                (sectionName === 'overview' && item.textContent.includes('Overview'))
+            );
+            if (activeItem) {
+                activeItem.classList.add('active', 'bg-secondary/10', 'text-secondary');
+            }
+        }
+
+        // Quick rebook functionality
+        function showQuickRebook() {
+            document.getElementById('quick-rebook-modal').classList.remove('hidden');
+        }
+
+        function closeQuickRebook() {
+            document.getElementById('quick-rebook-modal').classList.add('hidden');
+        }
+
+        function selectQuickRebook(serviceType) {
+            // Store selected service for booking page
+            localStorage.setItem('quickRebookService', serviceType);
+            closeQuickRebook();
+        }
+
+        // Service management functions
+        function rescheduleService() {
+            alert('Redirecting to reschedule service...');
+            // In real app, would redirect to booking page with pre-filled data
+        }
+
+        function modifyService() {
+            alert('Redirecting to modify service details...');
+        }
+
+        function cancelService() {
+            if (confirm('Are you sure you want to cancel this service? This action cannot be undone.')) {
+                alert('Service cancelled successfully. You will receive a confirmation email.');
+            }
+        }
+
+        // Address management
+        function addNewAddress() {
+            alert('Redirecting to add new address form...');
+        }
+
+        function editAddress(addressType) {
+            alert(`Editing ${addressType} address...`);
+        }
+
+        function deleteAddress(addressType) {
+            if (confirm(`Are you sure you want to delete your ${addressType} address?`)) {
+                alert(`${addressType} address deleted successfully.`);
+            }
+        }
+
+        function rebookAtAddress(addressType) {
+            localStorage.setItem('selectedAddress', addressType);
+            window.location.href = 'streamlined_booking_portal-2.html';
+        }
+
+        // Rebook functions
+        function rebookService(serviceType) {
+            localStorage.setItem('rebookService', serviceType);
+            window.location.href = 'streamlined_booking_portal-2.html';
+        }
+
+        // Document functions
+        function downloadDocument(docId) {
+            alert(`Downloading document: ${docId}`);
+            // In real app, would trigger file download
+        }
+
+        function downloadReceipt() {
+            alert('Downloading receipt...');
+        }
+
+        function showBeforeAfter() {
+            alert('Opening before/after photo gallery...');
+        }
+
+        // Rewards functions
+        function redeemReward(rewardType) {
+            if (confirm(`Are you sure you want to redeem your ${rewardType} reward?`)) {
+                alert('Reward redeemed successfully! Check your email for details.');
+            }
+        }
+
+        // Account functions
+        function exportData() {
+            alert('Your data export has been initiated. You will receive an email with download link within 24 hours.');
+        }
+
+        function deactivateAccount() {
+            if (confirm('Are you sure you want to deactivate your account? This action cannot be undone.')) {
+                alert('Account deactivation initiated. You will receive a confirmation email.');
+            }
+        }
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show overview section by default
+            showSection('overview');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+<!-- Mirrored from trashtitansnyc-l56io59.public.builtwithrocket.new/pages/customer_dashboard_account_portal.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Sep 2025 00:07:00 GMT -->
+</html>
