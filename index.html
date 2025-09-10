@@ -1,200 +1,58 @@
-<<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Trash Titans NYC | Fast, Affordable Junk Removal in All 5 Boroughs</title>
-  <meta name="description" content="Trash Titans NYC provides same-day junk removal across Queens, Brooklyn, Bronx, Manhattan, and Staten Island. Instant price calculator, online booking, licensed & insured. Call 1-347-321-4392." />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="preload" href="/assets/css/styles.css" as="style" />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <script defer src="/assets/js/main.js"></script>
-google-site-verification: google5656223a7164cbe8.html
-  <!-- LocalBusiness Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Trash Titans NYC",
-    "image": "https://trashtitansnyc.com/assets/img/og-cover.jpg",
-    "telephone": "+1-347-321-4392",
-    "url": "https://trashtitansnyc.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Queens",
-      "addressRegion": "NY",
-      "addressCountry": "US"
-    },
-    "areaServed": ["Queens","Brooklyn","Bronx","Manhattan","Staten Island"],
-    "sameAs": []
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HaulNation | Nationwide Junk Removal</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Sticky top bar -->
-  <div class="topbar">
-    <div class="container">
-      <span>Same-Day & Next-Day Slots Available</span>
-      <a class="phone" href="tel:13473214392">1-347-321-4392</a>
-      <a class="btn btn-sm" href="/booking.html">Get Instant Price & Book</a>
-    </div>
-  </div>
-
-  <!-- Header / Nav -->
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="/">
-        <img src="/assets/img/logo-raccoon.png" alt="Trash Titans NYC logo" />
-        <span>Trash Titans NYC</span>
-      </a>
-      <nav class="nav">
-        <a href="/#services">Services</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/booking.html">Booking</a>
-        <a href="/contact.html">Contact</a>
-        <div class="dropdown">
-          <button class="dropbtn">Boroughs</button>
-          <div class="dropdown-content">
-            <a href="/queens.html">Queens</a>
-            <a href="/brooklyn.html">Brooklyn</a>
-            <a href="/bronx.html">Bronx</a>
-            <a href="/manhattan.html">Manhattan</a>
-            <a href="/staten-island.html">Staten Island</a>
-          </div>
-        </div>
-      </nav>
-    </div>
+  <header>
+    <h1>HaulNation</h1>
+    <nav>
+      <a href="booking.html">Book Now</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="crew.html">Crew Login</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1>NYC’s Grittiest Junk Removal — Fast, Transparent, Respectful</h1>
-        <p>Same-day pickup in Queens, Brooklyn, Bronx, Manhattan, and Staten Island. Upfront pricing, licensed & insured crew, no nonsense.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/booking.html">Get Your Instant Price</a>
-          <a class="btn btn-secondary" href="tel:13473214392">Call 1-347-321-4392</a>
-        </div>
-        <ul class="badges">
-          <li>Licensed & Insured</li>
-          <li>Eco-Friendly Disposal</li>
-          <li>Family-Owned NYC</li>
-        </ul>
-      </div>
-      <div class="hero-tool">
-        <div class="card">
-          <h3>Instant estimate</h3>
-          <form id="estimate-form">
-            <label>Load size</label>
-            <select name="load" required>
-              <option value="0.25">Quarter truck</option>
-              <option value="0.5">Half truck</option>
-              <option value="0.75">Three-quarter</option>
-              <option value="1">Full truck</option>
-            </select>
-            <label>Item type</label>
-            <select name="type" required>
-              <option value="standard">Household</option>
-              <option value="heavy">Construction/Debris</option>
-              <option value="appliance">Appliances</option>
-              <option value="mattress">Mattress</option>
-            </select>
-            <label>Borough</label>
-            <select name="borough" required>
-              <option>Queens</option><option>Brooklyn</option><option>Bronx</option><option>Manhattan</option><option>Staten Island</option>
-            </select>
-            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
-            <div id="estimate-result" class="estimate-result" aria-live="polite"></div>
-            <a class="btn btn-accent btn-block" href="/booking.html">Book this price</a>
-          </form>
-        </div>
-      </div>
-    </div>
+    <h2>Nationwide Junk Removal. No Lifting. No Hassle.</h2>
+    <p>Instant quotes. Online booking. Crew in all 50 states.</p>
+    <a href="booking.html" class="cta-button">Get Your Quote</a>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Junk removal services</h2>
-      <div class="grid cards">
-        <div class="card">
-          <h3>Apartment & house cleanouts</h3>
-          <p>From studio walk-ups to brownstones — we move fast, protect floors, and leave it broom-clean.</p>
-        </div>
-        <div class="card">
-          <h3>Construction debris</h3>
-          <p>Demo, drywall, tile, lumber. We load, haul, and dispose responsibly with receipts on request.</p>
-        </div>
-        <div class="card">
-          <h3>Furniture & appliances</h3>
-          <p>Sofas, mattresses, fridges — stairs and tight turns are our specialty.</p>
-        </div>
-        <div class="card">
-          <h3>Curbside discount</h3>
-          <p>Place items outside and save — fastest turnaround, best price.</p>
-        </div>
-      </div>
-    </div>
+  <section class="calculator">
+    <h3>Estimate Your Price</h3>
+    <form id="quoteForm">
+      <input type="text" placeholder="Zip Code" required />
+      <select>
+        <option>Single Item</option>
+        <option>Full Load</option>
+        <option>Furniture</option>
+        <option>Appliances</option>
+      </select>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="quoteResult"></div>
   </section>
 
-  <!-- Proof -->
-  <section class="section alt">
-    <div class="container">
-      <h2>See the Titans in action</h2>
-      <p>Real NYC jobs — before/after. Filter by borough and job type in our gallery.</p>
-      <a class="btn" href="/gallery.html">View gallery</a>
-    </div>
+  <section class="features">
+    <h3>Why HaulNation?</h3>
+    <ul>
+      <li>📍 Local crews in every state</li>
+      <li>💳 Online payment & instant booking</li>
+      <li>📸 Photo verification & reviews</li>
+      <li>📅 Flexible scheduling</li>
+    </ul>
   </section>
 
-  <!-- Reviews (static placeholders; replace with your real quotes) -->
-  <section class="section">
-    <div class="container">
-      <h2>What NYC says</h2>
-      <div class="grid quotes">
-        <blockquote>“Same-day pickup in Flushing. Fast, fair, respectful.” — M.M., Queens</blockquote>
-        <blockquote>“Cleared our renovation debris in one run. Pros.” — M.M., Brooklyn</blockquote>
-        <blockquote>“Transparent price. Showed up early.” — J.R., Bronx</blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Trash Titans NYC</strong><br />
-        Serving all 5 boroughs<br />
-        <a href="tel:13473214392">1-347-321-4392</a>
-      </div>
-      <nav class="footer-nav">
-        <a href="/queens.html">Queens</a>
-        <a href="/brooklyn.html">Brooklyn</a>
-        <a href="/bronx.html">Bronx</a>
-        <a href="/manhattan.html">Manhattan</a>
-        <a href="/staten-island.html">Staten Island</a>
-      </nav>
-      <div class="legal">© <span id="year"></span> Trash Titans NYC. All rights reserved.</div>
-    </div>
+  <footer>
+    <p>&copy; 2025 HaulNation. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
-</html></tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
-
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
-
-</body>
-
 </html>
-
-
