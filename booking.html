@@ -2,42 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Your Pickup | HaulNation</title>
+  <title>Book Your Pickup | Trash Titans NYC</title>
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
   <header>
-    <h1>Book Your Junk Removal</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="crew.html">Crew Login</a>
-    </nav>
+    <h1>🦝 Book Your Junk Removal</h1>
+    <p>Call Now: <strong>1-347-321-4392</strong></p>
   </header>
 
-  <section class="booking-form">
-    <h2>Schedule Your Pickup</h2>
-    <form id="bookingForm">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="text" name="zip" placeholder="Zip Code" required />
-      <select name="itemType" required>
-        <option value="">Select Item Type</option>
-        <option value="single">Single Item</option>
-        <option value="furniture">Furniture</option>
-        <option value="appliances">Appliances</option>
-        <option value="full">Full Load</option>
-      </select>
-      <input type="date" name="date" required />
-      <input type="time" name="time" required />
-      <button type="submit">Proceed to Payment</button>
-    </form>
-    <div id="bookingResult"></div>
-  </section>
+  <main>
+    <section id="calendar">
+      <h2>Select a Date & Time</h2>
+      <iframe src="calendar/calendar.html" width="100%" height="600" frameborder="0"></iframe>
+    </section>
+
+    <section id="details-form">
+      <h2>Job Details</h2>
+      <form>
+        <label for="location">Pickup Address:</label>
+        <input type="text" id="location" name="location" required />
+
+        <label for="items">What are we hauling?</label>
+        <textarea id="items" name="items" rows="4" required></textarea>
+
+        <label for="contact">Your Phone Number:</label>
+        <input type="tel" id="contact" name="contact" required />
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </section>
+
+    <section id="payment">
+      <h2>Secure Payment</h2>
+      <p>Stripe integration coming soon.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 HaulNation. All rights reserved.</p>
+    <p>Serving all boroughs. Fast. Affordable. Trusted.</p>
   </footer>
 
   <script src="scripts/booking.js"></script>
