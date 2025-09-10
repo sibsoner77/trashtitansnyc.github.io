@@ -2,57 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HaulNation | Nationwide Junk Removal</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Trash Titans NYC | Junk Removal Across All 5 Boroughs</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
   <header>
-    <h1>HaulNation</h1>
     <nav>
-      <a href="booking.html">Book Now</a>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="crew.html">Crew Login</a>
-      <a href="videos.html">Videos</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="booking.html">Book Now</a></li>
+        <li>
+          <select onchange="location = this.value;">
+            <option value="">Estimate by Borough</option>
+            <option value="calculator/bronx.html">Bronx</option>
+            <option value="calculator/brooklyn.html">Brooklyn</option>
+            <option value="calculator/manhattan.html">Manhattan</option>
+            <option value="calculator/queens.html">Queens</option>
+            <option value="calculator/staten-island.html">Staten Island</option>
+          </select>
+        </li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Nationwide Junk Removal. No Lifting. No Hassle.</h2>
-    <p>Instant quotes. Online booking. Crew in all 50 states.</p>
-    <a href="booking.html" class="cta-button">Get Your Quote</a>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>🦝 Trash Titans NYC</h1>
+      <p>Junk Removal Across All 5 Boroughs. No Lifting. No Excuses.</p>
+      <a href="booking.html" class="btn">Schedule Your Pickup</a>
+    </section>
 
-  <section class="calculator">
-    <h3>Estimate Your Price</h3>
-    <form id="quoteForm">
-      <input type="text" placeholder="Zip Code" required />
-      <select>
-        <option>Single Item</option>
-        <option>Full Load</option>
-        <option>Furniture</option>
-        <option>Appliances</option>
+    <section class="estimate">
+      <h2>📍 Estimate Your Price</h2>
+      <p>Select your borough to get an instant quote:</p>
+      <select onchange="location = this.value;">
+        <option value="">Choose Borough</option>
+        <option value="calculator/bronx.html">Bronx</option>
+        <option value="calculator/brooklyn.html">Brooklyn</option>
+        <option value="calculator/manhattan.html">Manhattan</option>
+        <option value="calculator/queens.html">Queens</option>
+        <option value="calculator/staten-island.html">Staten Island</option>
       </select>
-      <button type="submit">Calculate</button>
-    </form>
-    <div id="quoteResult"></div>
-  </section>
+    </section>
 
-  <section class="features">
-    <h3>Why HaulNation?</h3>
-    <ul>
-      <li>📍 Local crews in every state</li>
-      <li>💳 Online payment & instant booking</li>
-      <li>📸 Photo verification & reviews</li>
-      <li>📅 Flexible scheduling</li>
-    </ul>
-  </section>
+    <section class="why">
+      <h2>💪 Why Trash Titans?</h2>
+      <ul>
+        <li>Local crews in every borough</li>
+        <li>Transparent pricing with instant calculators</li>
+        <li>Same-day service, rain or shine</li>
+        <li>No lifting, no hassle</li>
+        <li>Real job photos in our <a href="gallery/index.html">Gallery</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 HaulNation. All rights reserved.</p>
+    <p>📞 Call or Text: <strong>1-347-321-4392</strong></p>
+    <p>📧 Email: info@trashtitans.com</p>
+    <p>© 2025 Trash Titans NYC. Built for the boroughs.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
